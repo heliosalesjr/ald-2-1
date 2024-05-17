@@ -11,7 +11,8 @@ const HeroSection = () => {
               Aprendendo a Lidar com Dinheiro - Economia
             </h1>
             <p className="text-lg text-white py-8">
-              Olá, professor e professora! Seja bem-vindo e bem-vinda ao site de apoio da coleção <strong>Aprendendo a Lidar com Dinheiro: Educação Financeira</strong>. Nesta seção, há informações sobre o que são os sites “Aprendendo a Lidar com Dinheiro” e como estão organizados, facilitando a navegação e consulta. Vamos conhecê-los?
+            Olá, educador! Sejam bem-vindo ao site de apoio da coleção <strong>Aprendendo a Lidar com Dinheiro: Empreendedorismo</strong>. Nesta seção, há informações sobre o que são os sites Aprendendo a Lidar com Dinheiro e como estão organizados, facilitando sua navegação e consulta. Vamos conhecê-los?
+
             </p>
           </div>
           <motion.div 
