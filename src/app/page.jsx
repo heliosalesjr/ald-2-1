@@ -10,6 +10,8 @@ import BaixeLivros from "./components/BaixeLivros"
 import MainButton from "./components/MainButton"
 import MainProposta from "./components/MainProposta"
 import QueEmpreendedorismo from "./components/QueEmpreendedorismo"
+import EmpEscolas from "./components/EmpEscolas"
+import EmpRel from "./components/EmpRel"
 
 
 
@@ -23,6 +25,8 @@ export default function Home() {
       <CardList />
       <Divider />
       <QueEmpreendedorismo />
+      <EmpEscolas />
+      <EmpRel />
       <FeatureSection />
       <FAQDaisy />
       <Divider />
