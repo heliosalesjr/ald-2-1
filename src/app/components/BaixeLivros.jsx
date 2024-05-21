@@ -38,22 +38,7 @@ function BaixeLivros() {
               >
                 Livro do Estudante
               </a>
-              <a
-                href="https://www.google.com/url?q=https%3A%2F%2Fwww.flipsnack.com%2F7E8DB9BBDC9%2Fbei_educacao_ed_financeira_topicos_1ano_em_educador%2Ffull-view.html&sa=D&sntz=1&usg=AOvVaw2I23PHa2Y9H-tPfGDJycKh"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-customizado btn-outline mx-4"
-              >
-                Tópicos de Matemática
-              </a>
-              <a
-                href="https://www.flipsnack.com/7E8DB9BBDC9/bei_educacao_ed_financeira_socioemocional_9ano_em_educador/full-view.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-customizado btn-outline mx-4"
-              >
-                Atividades Socioemocionais
-              </a>
+              
             </div>
           </div>
           <motion.div className="grid grid-cols-2 gap-4 mt-8"

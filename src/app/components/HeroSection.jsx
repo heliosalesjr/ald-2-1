@@ -8,7 +8,8 @@ const HeroSection = () => {
         <div className="text-center flex items-center justify-between px-12">
           <div>
             <h1 className=" text-3xl font-bold tracking-tight text-white md:text-3xl xl:text-5xl">
-              Aprendendo a Lidar com Dinheiro - Economia
+              Aprendendo a Lidar com Dinheiro - Empreendedorismo
+
             </h1>
             <p className="text-lg text-white py-8">
             Olá, educador! Sejam bem-vindo ao site de apoio da coleção <strong>Aprendendo a Lidar com Dinheiro: Empreendedorismo</strong>. Nesta seção, há informações sobre o que são os sites Aprendendo a Lidar com Dinheiro e como estão organizados, facilitando sua navegação e consulta. Vamos conhecê-los?

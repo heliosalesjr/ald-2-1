@@ -3,7 +3,7 @@ import backgroundImage from '/public/images/esc1.jpg'; // Ajuste o caminho da im
 
 function EmpEscolas() {
   return (
-    <div className="relative w-full h-[800px]">
+    <div className="relative w-full h-[800px] max-w-7xl mx-auto">
       <div className="absolute inset-0">
         <Image 
           src={backgroundImage}

@@ -3,7 +3,7 @@ import backgroundImage from '/public/images/atividades_teacher.jpg'; // Ajuste o
 
 function QueEmpreendedorismo() {
   return (
-    <div className="relative w-full h-[800px]">
+    <div className="relative w-full h-[800px] max-w-7xl mx-auto">
       <div className="absolute inset-0">
         <Image 
           src={backgroundImage}
