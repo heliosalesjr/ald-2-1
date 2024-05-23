@@ -1,4 +1,4 @@
-import React from 'react'
+import { motion } from "framer-motion";
 
 function HeroBento() {
   return (
@@ -20,11 +20,26 @@ function HeroBento() {
         </div>
 
       </div>
-      <div className="hidden md:block flex-1 relative mb-4 bg-primary-focus rounded-xl">
-        {/* Div para a faixa transparente no topo 
-        <div className="absolute top-0 left-0 w-full h-8 bg-white"></div>*/}
+      <motion.div className="hidden md:block flex-1 relative mb-4 bg-primary-focus rounded-xl"
+      
+      initial={{ background: "orange" }}
+      animate={{
+        background: [
+          "rgba(134, 188, 12, 1)",   // Tailwind CSS orange-700
+          "rgba(2, 132, 199, 1)",   // Tailwind CSS sky-700
+        ],
+      }}
+      transition={{
+        duration: 2,
+        ease: "linear",
+        repeat: Infinity,
+        repeatType: "reverse",
+      }}
+      
+    >
+        
         <div className="absolute inset-0 " style={{backgroundImage: 'url(images/maolivro2aserie.png)', backgroundSize: 'cover', backgroundPosition: 'top'}}></div>
-      </div>
+      </motion.div>
     </div>
   )
 }

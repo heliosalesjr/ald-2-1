@@ -1,7 +1,7 @@
 'use client'
 import CardList from "./components/CardList"
 import FeatureSection from "./components/FeatureSection"
-import HeroSection from "./components/HeroSection"
+
 
 import SectionOne from "./components/SectionOne"
 import FAQDaisy from './components/FAQDaisy'
