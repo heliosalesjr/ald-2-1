@@ -30,7 +30,7 @@ function HeroBento() {
         ],
       }}
       transition={{
-        duration: 2,
+        duration: 5,
         ease: "linear",
         repeat: Infinity,
         repeatType: "reverse",
