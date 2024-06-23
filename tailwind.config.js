@@ -24,11 +24,14 @@ module.exports = {
       },
     ],
 },
-  theme: {
-    extend: {
-      
+theme: {
+  extend: {
+    letterSpacing: {
+      'custom': '0.2rem', // Define o espaçamento de caracteres personalizado
     },
   },
+},
+  
   darkMode: "class",
   plugins: [require("daisyui"),nextui(),require('flowbite/plugin')],
   

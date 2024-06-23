@@ -17,7 +17,7 @@ function QueEmpreendedorismo() {
       <div className="absolute inset-0 flex">
         <div className=" md:w-1/2"></div>
         <div className="w-full md:w-1/2 bg-black bg-opacity-50 flex flex-col justify-center p-8">
-          <h1 className="text-white underline decoration-primary text-2xl md:text-4xl mb-4 font-semibold pt-8">O que é Empreendedorismo?
+          <h1 className="text-white underline decoration-primary text-2xl md:text-4xl mb-4 font-semibold pt-8 tracking-custom">O que é Empreendedorismo?
 </h1>
           <p className="text-white py-2">Segundo o Sebrae, Empreendedorismo é “a capacidade que uma pessoa tem de identificar problemas e oportunidades, desenvolver soluções inovadoras e investir recursos na criação de algo positivo para a sociedade. Pode ser um negócio, um projeto ou mesmo um movimento que gere mudanças reais e impacto no cotidiano das pessoas”.
 </p>

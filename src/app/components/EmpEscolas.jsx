@@ -16,7 +16,7 @@ function EmpEscolas() {
       </div>
       <div className="absolute inset-0 flex">
         <div className="w-full md:w-1/2 bg-black bg-opacity-50 flex flex-col justify-center p-8">
-          <h1 className="text-white underline decoration-primary text-2xl md:text-4xl mb-4 font-semibold pt-8">
+          <h1 className="text-white underline decoration-primary text-2xl md:text-4xl mb-4 font-semibold pt-8 tracking-custom">
           Por que Empreendedorismo nas escolas?
 
           </h1>
