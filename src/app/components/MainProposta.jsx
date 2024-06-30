@@ -6,14 +6,14 @@ function MainProposta() {
   return (
     <>
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between px-4 py-8">
-            <div className="md:w-1/2">
+            <div className="md:w-1/3">
                 {/* Conteúdo da primeira coluna */}
-                <h1 className="text-center pt-8 text-4xl font-bold  text-slate-700">A proposta de trabalho</h1>
-                <p className=" mt-4 p-4 text-slate-700">A proposta deste programa é trabalhar os conteúdos de Matemática e Educação Financeira do Livro do Estudante por meio da Aprendizagem Baseada em Projetos em conjunto com outras Metodologias Ativas. Esses projetos são de curta de duração e, em conjunto com as metodologias ativas, foram pensados para desenvolver o protagonismo dos jovens. Pensando em criar uma experiência contextualizada e significativa para que os alunos construam o próprio conhecimento, o material está estruturado sobre a seguintes vertentes:</p>
+                <h1 className=" p-4 text-4xl font-bold  text-slate-700">A proposta de trabalho</h1>
+                <p className="mt-4 p-4 text-slate-700">A proposta deste programa é trabalhar os conteúdos de Matemática e Educação Financeira do Livro do Estudante por meio da Aprendizagem Baseada em Projetos em conjunto com outras Metodologias Ativas. Esses projetos são de curta de duração e, em conjunto com as metodologias ativas, foram pensados para desenvolver o protagonismo dos jovens. Pensando em criar uma experiência contextualizada e significativa para que os alunos construam o próprio conhecimento, o material está estruturado sobre a seguintes vertentes:</p>
                 {/* Adicione sua imagem aqui, se necessário */}
             </div>
         
-        <div className="p-4 md:w-1/2 mt-8 md:mt-0">
+        <div className="p-4 md:w-2/3 mt-8 md:mt-0">
         {/* Conteúdo da segunda coluna */}
         <Accordion variant='bordered'>
             <AccordionItem key="1" aria-label="Accordion 1" title="Aprendizagem Baseada em Projetos">
