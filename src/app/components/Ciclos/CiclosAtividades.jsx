@@ -2,7 +2,7 @@ import React from 'react';
 
 const CiclosAtividades = () => {
   return (
-    <div className='bg-slate-500'>
+    <div className='bg-slate-600'>
       <h1 className="text-4xl font-bold text-center text-white p-8">
         Atividades dos estudantes e dos professores
       </h1>
@@ -59,7 +59,7 @@ const CiclosAtividades = () => {
           </tbody>
         </table>
       </div>
-      <p className='mx-8 p-12 max-w-5xl mx-auto text-white text-center'>
+      <p className='p-12 max-w-5xl mx-auto text-white text-center'>
         Este recurso nos acompanhará nas próximas fases da execução do projeto, sempre destacando as atividades a serem executadas em cada momento.
       </p>
     </div>

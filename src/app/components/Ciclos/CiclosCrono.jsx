@@ -16,14 +16,14 @@ const CiclosCrono = () => {
             <h1 className="text-center flex items-center justify-center h-full text-white font-bold text-2xl p-4">Ciclo de projeto Coletivo</h1>
             </div>
             
-            <div className="bg-emerald-200 p-4 rounded">
+            <div className="bg-sky-200 p-4 rounded">
                 <p className="text-center flex items-center justify-center h-full font-semibold">Definição dos conteúdos</p>
             </div>
             <div className="">
                 
             </div>
             
-            <div className="bg-emerald-200 p-4 rounded">
+            <div className="bg-sky-200 p-4 rounded">
                 <p className="text-center flex items-center justify-center h-full font-semibold">Diagnóstico</p>
             </div>
             <div>
@@ -47,25 +47,25 @@ const CiclosCrono = () => {
                 <p className="text-center flex items-center justify-center h-full font-semibold">Montagem do Plano de Ação</p>
             </div>
 
-            <div className="bg-emerald-200 p-4 rounded">
+            <div className="bg-sky-200 p-4 rounded">
                 <p className="text-center flex items-center justify-center h-full font-semibold">Montagem do Planejamento Didático Ativo</p>
             </div>
             <div>
             </div>
             
-            <div className="bg-emerald-200 p-4 rounded">
+            <div className="bg-sky-200 p-4 rounded">
                 <p className="text-center flex items-center justify-center h-full font-semibold">Execução das atividades</p>
             </div>
             <div className="bg-orange-200 p-4 rounded">
                 <p className="text-center flex items-center justify-center h-full font-semibold">Execução das atividades</p>
             </div>
-            <div className="bg-emerald-200 p-4 rounded">
+            <div className="bg-sky-200 p-4 rounded">
                 <p className="text-center flex items-center justify-center h-full font-semibold">Avaliação</p>
             </div>
             <div className="bg-orange-200 p-4 rounded">
                 <p className="text-center flex items-center justify-center h-full font-semibold">Avaliação</p>
             </div>
-            <div className="bg-emerald-200 p-4 rounded">
+            <div className="bg-sky-200 p-4 rounded">
                 <p className="text-center flex items-center justify-center h-full font-semibold">Culminância</p>
             </div>
             
@@ -74,7 +74,7 @@ const CiclosCrono = () => {
             </div>
             </div>
         </div>
-        <p className=' p-12 max-w-5xl mx-auto text-white text-center'>
+        <p className='p-12 max-w-5xl mx-auto text-white text-center'>
             Este recurso nos acompanhará nas próximas fases da execução do projeto, sempre destacando as atividades a serem executadas em cada momento.
         </p>
       </div>
