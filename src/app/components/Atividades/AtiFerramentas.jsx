@@ -1,72 +1,72 @@
 'use client'
 import React from "react";
 import { motion } from 'framer-motion'
+import { FaRegLightbulb, FaRegSmile, FaGamepad } from "react-icons/fa"
 
 function AtiFerramentas() {
+  const ferramentas = [
+    {
+      title: "Realidade e desejo",
+      icon: <FaRegLightbulb className="text-4xl text-blue-600" />,
+      explicacao: "https://docs.google.com/document/d/1wS14avbhcJd8NbVVn_juK-7LvFMRjrd064cWvk_mrCw/edit",
+      modelo: "https://docs.google.com/spreadsheets/d/1RnCXUPAmwuUf42tiWhn4H3DT5HTPWIkMHb35bbNyatA/edit#gid=2055273226",
+    },
+    {
+      title: "Me agrada, me incomoda",
+      icon: <FaRegSmile className="text-4xl text-green-600" />,
+      explicacao: "https://docs.google.com/document/d/1OCgxyp9bb8KFvmIiu1oJrvypkbb2H20lbbZcsyK4boo/edit",
+      modelo: "http://scrumblr.ca/meagradaincomoda",
+    },
+    {
+      title: "Jogo de perguntas e respostas",
+      icon: <FaGamepad className="text-4xl text-purple-600" />,
+      explicacao: "https://docs.google.com/document/d/1_4X13GitDVF5mjbcyNHgyjoSAbOQgsitn_FtDohCyRo/edit?usp=sharing",
+      modelo: "https://padlet.com/beieducacao1/jogo-de-perguntas-e-respostas-dqogz05rbon58e2d",
+    },
+  ]
+
   return (
     <>
-      <div className='mx-auto max-w-screen-xl pt-8'>
-        <h2 className='font-bold text-4xl text-slate-700 py-4 text-center'>Ferramentas que podem ser utilizadas para fazer esse diagnóstico</h2>
-        <p className="text-gray-800 text-center py-4">Criamos um link para cada uma das sugestões de ferramentas já com o modelo de aplicação com os estudantes. Clique em cada uma dessas ferramentas para conhecê-las e então aplicá-las com os estudantes por meio da plataforma Google:</p>
+      <div className='mx-auto max-w-screen-xl py-16'>
+        <h2 className='font-bold text-4xl text-slate-700 py-4 text-center'>
+          Ferramentas que podem ser utilizadas para fazer esse diagnóstico
+        </h2>
+        <p className="text-gray-800 text-center py-4 ">
+          Criamos um link para cada uma das sugestões de ferramentas já com o modelo de aplicação com os estudantes. Clique em cada uma dessas ferramentas para conhecê-las e então aplicá-las com os estudantes por meio da plataforma Google:
+        </p>
       </div>
-      <motion.div className="grid grid-cols-1 mx-auto max-w-screen-xl md:grid-cols-3 sm:grid-cols-1 gap-8 px-8"
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1 }}>
-          <div className="card bg-base-100 shadow-xl">
-            <figure className="px-10 pt-10">
-              <img src="/images/desejo.png" alt="Realidade e desejo" className="rounded-xl" />
-            </figure>
-            <div className="card-body items-center text-center">
-              <h2 className="card-title py-4">Realidade e desejo</h2>
-              <div className="card-actions text-center">
-                <a href="https://docs.google.com/document/d/1wS14avbhcJd8NbVVn_juK-7LvFMRjrd064cWvk_mrCw/edit" target="_blank" rel="noopener noreferrer">
-                  <button className="btn btn-primary text-white">Explicação</button>
-                </a>
-                <a href="https://docs.google.com/spreadsheets/d/1RnCXUPAmwuUf42tiWhn4H3DT5HTPWIkMHb35bbNyatA/edit#gid=2055273226" target="_blank" rel="noopener noreferrer">
-                  <button className="btn btn-primary text-white">Modelo</button>
-                </a>
-              </div>
-            </div>
-          </div>
 
-          <div className="card bg-base-100 shadow-xl">
-            <figure className="px-10 pt-10">
-              <img src="/images/agrada.png" alt="Me agrada, me incomoda" className="rounded-xl" />
-            </figure>
-            <div className="card-body items-center text-center">
-              <h2 className="card-title py-4">Me agrada, me incomoda</h2>
-              <div className="card-actions">
-                <a href="https://docs.google.com/document/d/1OCgxyp9bb8KFvmIiu1oJrvypkbb2H20lbbZcsyK4boo/edit" target="_blank" rel="noopener noreferrer">
-                  <button className="btn btn-primary text-white">Explicação</button>
-                </a>
-                <a href="https://jamboard.google.com/d/1SIHHDOaJ1nyOurny5a0qERcZRfc1vKFcQ7cdLpVXfvc/viewer?f=0&pli=1" target="_blank" rel="noopener noreferrer">
-                  <button className="btn btn-primary text-white">Modelo</button>
-                </a>
-              </div>
+      <motion.div 
+        className="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 max-w-screen-xl mx-auto pb-20"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        {ferramentas.map((ferramenta, idx) => (
+          <motion.div 
+            key={idx} 
+            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center text-center border border-slate-200 hover:border-blue-400"
+            whileHover={{ y: -6 }}
+          >
+            <div className="mb-4">{ferramenta.icon}</div>
+            <h3 className="text-lg font-semibold text-slate-700">{ferramenta.title}</h3>
+            
+            <div className="flex gap-3 pt-6">
+              <a href={ferramenta.explicacao} target="_blank" rel="noopener noreferrer">
+                <button className="px-4 py-2 bg-blue-600 text-white rounded-xl text-sm font-medium hover:bg-blue-700 transition">
+                  Explicação
+                </button>
+              </a>
+              <a href={ferramenta.modelo} target="_blank" rel="noopener noreferrer">
+                <button className="px-4 py-2 bg-blue-600 text-white rounded-xl text-sm font-medium hover:bg-blue-700 transition">
+                  Modelo
+                </button>
+              </a>
             </div>
-          </div>
-
-          <div className="card bg-base-100 shadow-xl">
-            <figure className="px-10 pt-10">
-              <img src="/images/jogo.png" alt="Jogo de perguntas e respostas" className="rounded-xl" />
-            </figure>
-            <div className="card-body items-center text-center">
-              <h2 className="card-title">Jogo de perguntas e respostas</h2>
-              <div className="card-actions py-4">
-                <a href="https://docs.google.com/document/d/1ehHEMgdcvgmy1zp8UBF52GiJo1VYp6e2SUZrEMbRaMk/edit" target="_blank" rel="noopener noreferrer">
-                  <button className="btn btn-primary text-white">Explicação</button>
-                </a>
-                <a href="https://jamboard.google.com/d/1N0dXH1ZbNpfax0MkX1srcrnW9NpkgwL7XRvK9636_VE/viewer?f=0" target="_blank" rel="noopener noreferrer">
-                  <button className="btn btn-primary text-white">Modelo</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className='divider max-w-screen-xl mx-auto'></div>
-        </motion.div>
-    
+          </motion.div>
+        ))}
+      </motion.div>
     </>
-    
   );
 }
 
