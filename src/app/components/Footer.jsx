@@ -15,7 +15,7 @@ function Footer() {
               />
             </a>
             <p className="py-4 text-white">
-              CONTEÚDO COM PROPÓSITO<br />2024 © Todos os direitos reservados
+              CONTEÚDO COM PROPÓSITO<br />2025 © Todos os direitos reservados
             </p>
           </div>
         </aside>
